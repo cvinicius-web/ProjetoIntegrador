@@ -6,6 +6,6 @@
 <li>Vinicius Fantinel</li>
 
 
-<<b>Divisão</b>
+<h1><b>Divisão</b></h1>
 
 </ul>
