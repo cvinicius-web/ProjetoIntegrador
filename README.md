@@ -18,6 +18,7 @@
 
 <ul >
 <li>Sofia Omena</li>
-<li> Kethilly Karoline : Responsável por fazer o modelo lógico e com a ajuda da Sofia fiz o modelo conceitual DER</li>
+<li> Kethilly Karoline 
+: Responsável por fazer o modelo lógico e com a ajuda da Sofia fiz o modelo conceitual DER</li>
 <li>Vinicius Fantinel</li>
 </ul>
