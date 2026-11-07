@@ -1,1 +1,55 @@
+TABELAS: 
+Morador(cpf , pontos,tel, nome) 
+PK cpf 
 
+Usuario( nome_usua, email, end,cpf)  
+FK/PK cpf referencia Morador
+
+Entrega(cod, hora, total_p, data) 
+PK cod
+
+Resgate(cod_resc, , data) 
+PK cod_resc
+
+Recompensa(codr, registro_p, catalogo) 
+PK codr
+
+Item_E(codE, kg) 
+PK codE
+
+Ponto_C(id,nome,end,tel)
+PK id
+
+Material(tipo,pont_kg,cod_m) 
+PK cod_m
+
+
+
+RELACIONAMENTO ENTRE AS TABELAS: 
+Morad_Usua(CPF , pontos,tel,nome,nome_usua,email,end) 
+
+Morador(cpf , pontos,tel, nome) 
+Entrega(cod, hora, total_p, data, cpf) 
+*cpf referencia Morador 
+
+Morador(cpf , pontos,tel, nome) 
+Resgate (cod_resg  , data,extrato, cpf) 
+*cpf referencia Morador 
+
+Resgate(cod_resc, , data) 
+Recompensa(codr, registro_p, catalogo) 
+Resgat_Recomp(codr,cod_resc) 
+*codr referencia Recompensa 
+*cod_resc referencia Resgate 
+
+Entrega(cod, hora, total_p, data) 
+Item_E(codE, kg ,cod) 
+*cod referencia Entrega 
+
+Ponto_C(id,nome,end,tel) 
+Entrega(cod, hora, total_p, data,id) 
+*ID referencia Ponto_C
+
+Material(tipo,pont_kg,cod_m) 
+Item_E(codE, kg, cod_m) 
+*cod_m referencia Material
